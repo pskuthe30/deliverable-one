@@ -1,0 +1,125 @@
+body{
+  margin:0px;
+}
+header
+{
+    background-color: #F2F2F2;
+   display:flex;
+    justify-content:space-between;
+    padding:15px;
+}
+
+.child-nav{
+    font-family: 'Roboto', sans-serif;
+    padding:0px;
+    margin:0px;
+    align-items: flex-end;
+}
+a.btn{
+  background-color: #20a8b4;
+  color:#fff;
+  border-radius: 10px;
+  display:inline-block;
+}
+.btn:hover{
+  background-color:#ff5c0f ;
+  color:#fff;
+}
+h1.brand-logo{
+    color: #20a8b4;
+    padding:0px;
+    align-content: flex-start;
+    margin:0px;
+    align-items: flex-start;
+    
+}
+span{
+    color:#ff5c0f;
+}
+.container{
+  padding:15px;
+  display:flex;
+  justify-content: space-around;
+}
+
+.container img{
+  width:100%;
+}
+
+
+a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  font-size: 16px;
+  padding:10px;
+}
+
+a:hover {
+    color:#ff5c0f;
+}
+li.active {
+    padding:12px;
+    border-radius: 10px;
+    color:#fff;
+    background-color: #20a8b4;
+ 
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 480px) {
+  header{display:block;}
+
+  .container{
+    justify-content: flex-start;
+  }
+
+  a.link{
+    padding-left: 0;
+  }
+  a.btn{
+    display:block;
+  }
+  .banner-img{
+    display:none;
+  }
+   h2{
+    margin-top:15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  li {
+    width: auto;
+  }
+  a.btn{
+    display:inline-block;
+  }
+  
+  .banner-img{
+    display:block;
+  }
+ 
+  h2{
+    font-size:2em;
+    margin-top:30%;
+  }
+  
+}
