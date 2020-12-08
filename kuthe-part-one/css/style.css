@@ -76,10 +76,12 @@ li {
 }
 
 @media screen and (min-width: 480px) {
-  header{display:block;}
+  header {display:block;}
 
   .container{
+    display:block;
     justify-content: flex-start;
+    
   }
 
   a.link{
@@ -97,13 +99,16 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-  header{
+    header{
     display:flex;
     flex-wrap: wrap;
   }
   ul {
     display: flex;
     justify-content: space-around;
+  }
+  .container{
+    display: flex;
   }
   
   li {
@@ -115,11 +120,10 @@ li {
   
   .banner-img{
     display:block;
-  }
+    }
  
   h2{
     font-size:2em;
     margin-top:30%;
   }
-  
-}
+ }
