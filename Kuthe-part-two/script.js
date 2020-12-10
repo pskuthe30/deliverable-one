@@ -5,7 +5,8 @@
     } 
  
  for (var i=1 ; i <= rainfall; i++) {
-    document.write( "*" );
+  document.write("*");
+    
     }
     
     var answer= null;
@@ -13,27 +14,32 @@
 
 if (answer=="no" || answer=="NO")
 {
-  if (rainfall >=20){
-       document.write("<br />"+"The yield should be 45 bushels per acre");}
+  if (rainfall >=20)
+  {
+     console.log("The yield should be 45 bushels per acre");
+    }
    else
-    { document.write("<br />"+"The yield should be 40 bushels per acre");
+    { console.log("The yield should be 40 bushels per acre");
   }
 }
 else {
     var brand = prompt("<br />"+" Did you use premium or regular fertilizer?");
    
-    if (brand=="premium"|| brand =="PREMIUM")
+    if (brand=="premium")
        {
-      if (rainfall > 20) 
-          document.write("<br />"+"The yield should be 51.45 bushnels per acre");
-          else if (rainfall <= 20)
-          document.write("<br />"+"The yield should be 55 bushnels per acre");
+      if (rainfall < 20) {
+        console.log("The yield should be 34.5 bushnels per acre");}
+          
+          else if (rainfall >= 20)
+          console.log("The yield should be 51.45 bushnels per acre");
     }
    else if (brand=="regular")
     {
-       if (rainfall <= 20) 
-       document.write("<br />"+"The yield should be 40 bushnels per acre");
-      else if (rainfall > 20) 
-         document.write("<br />"+"The yield should be 45 bushnels per acre");
+       if (rainfall < 20) 
+       console.log("The yield should be 33 bushnels per acre");
+      else if (rainfall >= 20) 
+      console.log("The yield should be 45 bushnels per acre");
     }
   }
+
+  
